@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vaibhav Lande - Portfolio</title>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+<style>
+    * {margin:0; padding:0; box-sizing:border-box; font-family: 'Roboto', sans-serif;}
+    body {background: #f5f7fa; color: #333; line-height:1.6; transition: background 0.3s, color 0.3s;}
+    a {text-decoration:none; color:inherit;}
+    button {cursor:pointer; transition: transform 0.2s;}
+
+    /* Dark mode */
+    body.dark {background:#1e1e2f; color:#f0f0f0;}
+    body.dark header {background:#2c2c4c;}
+    body.dark .info-container {background:#2c2c4c; box-shadow:0 5px 15px rgba(0,0,0,0.5);}
+    body.dark footer {background:#2c2c4c; color:#ccc;}
+
+    /* Header */
+    header {
+        background: #4a90e2;
+        color:white;
+        padding:15px 0;
+        text-align:center;
+        position:sticky;
+        top:0;
+        z-index:1000;
+        box-shadow:0 2px 5px rgba(0,0,0,0.1);
+        transition: background 0.3s;
+    }
+    header nav a {
+        margin:0 12px;
+        font-weight:bold;
+        transition: color 0.3s;
+    }
+    header nav a:hover {color:#ffeb3b;}
+    #themeToggle {
+        margin-left:15px;
+        background:white;
+        color:#4a90e2;
+        border:none;
+        padding:5px 12px;
+        border-radius:5px;
+        font-weight:bold;
+    }
+    #themeToggle:hover {transform:scale(1.1);}
+
+    /* Hero */
+    .hero {
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        justify-content:center;
+        padding:60px 20px;
+        text-align:center;
+        background: linear-gradient(135deg,#4a90e2,#357ABD);
+        color:white;
+        border-radius:0 0 50% 50% / 10%;
+        animation: fadeIn 1.5s ease;
+    }
+    .hero img {
+        width:150px;
+        height:150px;
+        border-radius:50%;
+        border:4px solid white;
+        margin-bottom:20px;
+        object-fit:cover;
+        animation: popIn 1s ease;
+    }
+    .hero h2 {font-size:2em; margin-bottom:10px; animation: slideIn 1s ease;}
+    .hero p {font-size:1.1em; margin-bottom:20px; animation: slideIn 1.2s ease;}
+    .social a {
+        margin:0 10px;
+        font-size:1.8em;
+        transition: transform 0.3s, color 0.3s;
+    }
+    .social a:hover {transform:scale(1.4); color:#ffeb3b;}
+
+    /* Info sections */
+    .info-container {
+        background:white;
+        max-width:700px;
+        margin:30px auto;
+        padding:30px;
+        border-radius:15px;
+        box-shadow:0 5px 15px rgba(0,0,0,0.1);
+        animation: fadeInUp 1s ease;
+    }
+    .info-container h3 {color:#4a90e2; margin-bottom:15px;}
+    .info-container p {margin-bottom:10px; font-size:1.05em;}
+
+    /* Chat form */
+    form input, form textarea {
+        width:100%; padding:10px; margin:5px 0 10px 0; border-radius:8px; border:1px solid #ccc;
+        font-size:1em;
+    }
+
+    form button {margin-top:10px;}
+
+    /* Footer */
+    footer {
+        text-align:center;
+        padding:15px;
+        background:#e0e0e0;
+        margin-top:30px;
+        font-size:0.9em;
+        border-top:1px solid #ccc;
+        transition: background 0.3s, color 0.3s;
+    }
+
+    /* Animations */
+    @keyframes fadeIn {from{opacity:0;} to{opacity:1;}}
+    @keyframes popIn {0%{transform:scale(0);} 100%{transform:scale(1);}}
+    @keyframes slideIn {0%{opacity:0; transform: translateY(-20px);} 100%{opacity:1; transform:translateY(0);}}
+    @keyframes fadeInUp {0%{opacity:0; transform: translateY(20px);} 100%{opacity:1; transform:translateY(0);}}
+
+    /* Buttons */
+    .btn {
+        display:inline-block;
+        padding:12px 25px;
+        background:#4a90e2;
+        color:white;
+        border-radius:10px;
+        font-weight:bold;
+        font-size:1em;
+        transition:background 0.3s, transform 0.2s;
+    }
+    .btn:hover {background:#357ABD; transform:scale(1.05);}
+
+    /* Responsive */
+    @media(max-width:600px){
+        .hero img {width:120px; height:120px;}
+        .hero h2 {font-size:1.5em;}
+    }
+</style>
+</head>
+<body>
+
+<header>
+    <h1>Vaibhav Lande</h1>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+        <a href="#chat">Chat</a>
+        <button id="themeToggle">Dark Mode</button>
+    </nav>
+</header>
+
+<section class="hero">
+    <img src="https://via.placeholder.com/150" alt="Vaibhav Lande Profile Picture">
+    <h2>@Vaibhav_4572k</h2>
+    <p>Student at JNV Hingoli | Navodayan</p>
+    <div class="social">
+        <a href="https://instagram.com/Vaibhav_4572k" target="_blank">📸</a>
+        <a href="https://twitter.com/Vaibhav_4572k" target="_blank">🐦</a>
+        <a href="https://facebook.com" target="_blank">📘</a>
+    </div>
+</section>
+
+<section id="about" class="info-container">
+    <h3>Personal Details</h3>
+    <p><strong>Full Name:</strong> Vaibhav Lande</p>
+    <p><strong>School:</strong> JNV HINGOLI</p>
+    <p><strong>Section:</strong> Navodayan</p>
+    <p><strong>Date of Birth:</strong> 22/10/2009</p>
+    <p><strong>Address:</strong> Dhanora Banjara</p>
+</section>
+
+<section id="contact" class="info-container">
+    <h3>Contact</h3>
+    <p>Email: <a href="mailto:vaibhavlande705@gmail.com">vaibhavlande705@gmail.com</a></p>
+    <p>Instagram: <a href="https://instagram.com/Vaibhav_4572k">@Vaibhav_4572k</a></p>
+    <p><a href="mailto:vaibhavlande705@gmail.com" class="btn">Send Email</a></p>
+</section>
+
+<section id="chat" class="info-container">
+    <h3>Chat with Me</h3>
+    <p>Send me a message and I will reply to you on Instagram!</p>
+    <form action="mailto:vaibhavlande705@gmail.com" method="post" enctype="text/plain">
+        <label for="name">Your Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" placeholder="Type your message here..." required rows="5"></textarea>
+        <button type="submit" class="btn">Send Message</button>
+    </form>
+</section>
+
+<footer>
+    &copy; 2025 Vaibhav Lande. All rights reserved.
+</footer>
+
+<script>
+    const themeBtn = document.getElementById('themeToggle');
+    themeBtn.addEventListener('click', () => {
+        document.body.classList.toggle('dark');
+        themeBtn.textContent = document.body.classList.contains('dark') ? 'Light Mode' : 'Dark Mode';
+    });
+</script>
+
+</body>
+</html>
