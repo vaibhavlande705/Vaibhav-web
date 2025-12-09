@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Vaibhav Lande - Portfolio</title>
+<title>Vaibhav Lande </title>
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 <style>
     * {margin:0; padding:0; box-sizing:border-box; font-family: 'Roboto', sans-serif;}
@@ -148,23 +148,32 @@
 </header>
 
 <section class="hero">
-    <img src="https://via.placeholder.com/150" alt="Vaibhav Lande Profile Picture">
+    <img src="myphoto.jpg" alt="Vaibhav Lande Profile Picture">
     <h2>@Vaibhav_4572k</h2>
     <p>Student at JNV Hingoli | Navodayan</p>
     <div class="social">
         <a href="https://instagram.com/Vaibhav_4572k" target="_blank">📸</a>
-        <a href="https://twitter.com/Vaibhav_4572k" target="_blank">🐦</a>
-        <a href="https://facebook.com" target="_blank">📘</a>
+        
     </div>
 </section>
 
 <section id="about" class="info-container">
     <h3>Personal Details</h3>
-    <p><strong>Full Name:</strong> Vaibhav Lande</p>
+    <p><strong>NAME:</strong>VAIBAHV LANDE</p>
     <p><strong>School:</strong> JNV HINGOLI</p>
-    <p><strong>Section:</strong> Navodayan</p>
     <p><strong>Date of Birth:</strong> 22/10/2009</p>
-    <p><strong>Address:</strong> Dhanora Banjara</p>
+    <p><strong>Address:</strong> Dhanora Banjara,Sengaon</p>
+    <p><strong>HOBBY:</strong>  <ul>
+      <li>Learning internet</li>
+      <li>Learning coding</li>
+      <li>Watching tech videos</li>
+      <li>programming </li>
+      <li> Learn CCTV, Wifi,IP</li>
+      <li>collect anyone data,info. </li>
+    </ul></p>
+     <p><strong> Temp.AIM :</strong>
+    <ul>
+      <li>I want to become a software developer,programer,but black+grey hat hacker .</ul></li></p>
 </section>
 
 <section id="contact" class="info-container">
@@ -177,7 +186,31 @@
 <section id="chat" class="info-container">
     <h3>Chat with Me</h3>
     <p>Send me a message and I will reply to you on Instagram!</p>
-    <form action="mailto:vaibhavlande705@gmail.com" method="post" enctype="text/plain">
+    <form action="https://instagram.com/Vaibhav_4572k" method="post" enctype="text/plain">
+      <h2>I am <span id="typed"></span></h2><script>
+const text = ["a Student", "a Coder", "a Future Developer"];
+let i = 0, j = 0;
+let currentText = "";
+let isDeleting = false;
+
+function type() {
+  const el = document.getElementById("typed");
+  if (i >= text.length) i = 0;
+  if (!isDeleting && j <= text[i].length) {
+    currentText = text[i].substring(0, j++);
+    el.textContent = currentText;
+  } else if (isDeleting && j >= 0) {
+    currentText = text[i].substring(0, j--);
+    el.textContent = currentText;
+  }
+  
+  if (j === text[i].length) isDeleting = true;
+  if (j === 0 && isDeleting) { isDeleting = false; i++; }
+  setTimeout(type, isDeleting ? 50 : 150);
+}
+
+type();
+</script>
         <label for="name">Your Name:</label>
         <input type="text" id="name" name="name" placeholder="Enter your name" required>
         <label for="message">Message:</label>
@@ -198,5 +231,17 @@
     });
 </script>
 
-</body>
+</body><!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Blog</title>
+<style>
+body { font-family: sans-serif; padding:20px; }
+h1 { text-align:center; }
+.post { background:#f4f4f4; padding:15px; margin:20px auto; border-radius:10px; max-width:600px; }
+.post h2 { color:#ff6600; }
+</style>
+</head></body>
 </html>
